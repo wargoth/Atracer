@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_atracer_model_Record" items="${records}" z="BjDuz8WocFxfNg+qsxhEyC7Ov8o=">
+        <table:table data="${records}" id="l_org_atracer_model_Record" path="/records" z="5ZoHaYEtevud0ZbemnzxexB06Q8=">
+            <table:column id="c_org_atracer_model_Record_packageName" property="packageName" z="6qoKCLFoT9KCoSSZhSR1AgTjBdQ="/>
+            <table:column id="c_org_atracer_model_Record_packageVersion" property="packageVersion" z="xRn4CoQzvRx8Lf2RWX9aryTJK1s="/>
+            <table:column id="c_org_atracer_model_Record_stacktrace" property="stacktrace" z="5AgswOXT0klSD5aq71G9qmlewCc="/>
+        </table:table>
+    </page:list>
+</div>

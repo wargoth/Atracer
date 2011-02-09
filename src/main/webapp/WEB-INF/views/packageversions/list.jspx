@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_atracer_model_PackageVersion" items="${packageversions}" z="sakPDXdvfI9wzmHzzyyJKgY9fKs=">
+        <table:table data="${packageversions}" id="l_org_atracer_model_PackageVersion" path="/packageversions" z="T57CUosBWZQZRGCf3W2STCsBDFg=">
+            <table:column id="c_org_atracer_model_PackageVersion_name" property="name" z="JZ0kcsxw6Td94qLcgtYT7d4N1+4="/>
+        </table:table>
+    </page:list>
+</div>
