@@ -31,7 +31,7 @@ privileged aspect PackageVersion_Roo_Entity {
     
     @Version
     @Column(name = "version")
-    private Integer PackageVersion._version;
+    private Integer PackageVersion.version;
     
     public Long PackageVersion.getId() {
         return this.id;
@@ -41,12 +41,12 @@ privileged aspect PackageVersion_Roo_Entity {
         this.id = id;
     }
     
-    public Integer PackageVersion.get_version() {
-        return this._version;
+    public Integer PackageVersion.getVersion() {
+        return this.version;
     }
     
-    public void PackageVersion.set_version(Integer version) {
-        this._version = version;
+    public void PackageVersion.setVersion(Integer version) {
+        this.version = version;
     }
     
     @Transactional
