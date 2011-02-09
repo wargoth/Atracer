@@ -9,7 +9,7 @@ privileged aspect PackageVersion_Roo_ToString {
     
     public String PackageVersion.toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Version: ").append(getVersion());
+        sb.append("Name: ").append(getName());
         return sb.toString();
     }
     

@@ -7,12 +7,12 @@ import java.lang.String;
 
 privileged aspect PackageVersion_Roo_JavaBean {
     
-    public String PackageVersion.getVersion() {
-        return this.version;
+    public String PackageVersion.getName() {
+        return this.name;
     }
     
-    public void PackageVersion.setVersion(String version) {
-        this.version = version;
+    public void PackageVersion.setName(String name) {
+        this.name = name;
     }
     
 }
