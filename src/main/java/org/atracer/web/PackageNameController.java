@@ -5,7 +5,7 @@ import org.springframework.roo.addon.web.mvc.controller.RooWebScaffold;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@RooWebScaffold(path = "packagenames", formBackingObject = PackageName.class)
+@RooWebScaffold(path = "packagenames", formBackingObject = PackageName.class, create = false, update = false, delete = false)
 @RequestMapping("/packagenames")
 @Controller
 public class PackageNameController {

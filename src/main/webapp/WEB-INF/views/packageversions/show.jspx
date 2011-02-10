@@ -2,7 +2,7 @@
 <div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
-    <page:show id="ps_org_atracer_model_PackageVersion" object="${packageversion}" path="/packageversions" z="vwy7HL9iGO3nwsezO9752OPOPJo=">
+    <page:show create="false" delete="false" id="ps_org_atracer_model_PackageVersion" object="${packageversion}" path="/packageversions" update="false" z="03tyPZE8z4kdpZPpiVka0nduyxk=">
         <field:display field="name" id="s_org_atracer_model_PackageVersion_name" object="${packageversion}" z="ILVuBq9NVnX0OOtI9ydgFqOtW5Q="/>
     </page:show>
 </div>

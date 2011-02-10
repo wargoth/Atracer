@@ -3,7 +3,7 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <page:list id="pl_org_atracer_model_PackageName" items="${packagenames}" z="pLlmkFHh6EdDdBVxDrS+i8BOyCU=">
-        <table:table data="${packagenames}" id="l_org_atracer_model_PackageName" path="/packagenames" z="McAP/HCZw3mCutB6QcPQ0T02MSM=">
+        <table:table data="${packagenames}" delete="false" id="l_org_atracer_model_PackageName" path="/packagenames" update="false" z="2S9dynTa4AQ5KpmGfmrUS1MDPyw=">
             <table:column id="c_org_atracer_model_PackageName_name" property="name" z="nVl9eceGnPwp0EioTsTQgEs0GrY="/>
         </table:table>
     </page:list>

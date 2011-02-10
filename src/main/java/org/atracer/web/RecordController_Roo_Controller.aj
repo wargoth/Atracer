@@ -7,9 +7,7 @@ import java.io.UnsupportedEncodingException;
 import java.lang.Integer;
 import java.lang.Long;
 import java.lang.String;
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import org.atracer.model.PackageName;
@@ -26,30 +24,6 @@ import org.springframework.web.util.UriUtils;
 import org.springframework.web.util.WebUtils;
 
 privileged aspect RecordController_Roo_Controller {
-    
-    @RequestMapping(method = RequestMethod.POST)
-    public String RecordController.create(@Valid Record record, BindingResult result, Model model, HttpServletRequest request) {
-        if (result.hasErrors()) {
-            model.addAttribute("record", record);
-            return "records/create";
-        }
-        record.persist();
-        return "redirect:/records/" + encodeUrlPathSegment(record.getId().toString(), request);
-    }
-    
-    @RequestMapping(params = "form", method = RequestMethod.GET)
-    public String RecordController.createForm(Model model) {
-        model.addAttribute("record", new Record());
-        List dependencies = new ArrayList();
-        if (PackageName.countPackageNames() == 0) {
-            dependencies.add(new String[]{"packageName", "packagenames"});
-        }
-        if (PackageVersion.countPackageVersions() == 0) {
-            dependencies.add(new String[]{"packageVersion", "packageversions"});
-        }
-        model.addAttribute("dependencies", dependencies);
-        return "records/create";
-    }
     
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public String RecordController.show(@PathVariable("id") Long id, Model model) {
@@ -85,14 +59,6 @@ privileged aspect RecordController_Roo_Controller {
     public String RecordController.updateForm(@PathVariable("id") Long id, Model model) {
         model.addAttribute("record", Record.findRecord(id));
         return "records/update";
-    }
-    
-    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
-    public String RecordController.delete(@PathVariable("id") Long id, @RequestParam(value = "page", required = false) Integer page, @RequestParam(value = "size", required = false) Integer size, Model model) {
-        Record.findRecord(id).remove();
-        model.addAttribute("page", (page == null) ? "1" : page.toString());
-        model.addAttribute("size", (size == null) ? "10" : size.toString());
-        return "redirect:/records?page=" + ((page == null) ? "1" : page.toString()) + "&size=" + ((size == null) ? "10" : size.toString());
     }
     
     @ModelAttribute("packagenames")

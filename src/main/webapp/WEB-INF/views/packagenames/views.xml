@@ -7,10 +7,4 @@
 <definition extends="default" name="packagenames/show">
         <put-attribute name="body" value="/WEB-INF/views/packagenames/show.jspx"/>
     </definition>
-<definition extends="default" name="packagenames/create">
-        <put-attribute name="body" value="/WEB-INF/views/packagenames/create.jspx"/>
-    </definition>
-<definition extends="default" name="packagenames/update">
-        <put-attribute name="body" value="/WEB-INF/views/packagenames/update.jspx"/>
-    </definition>
 </tiles-definitions>
