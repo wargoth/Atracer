@@ -11,8 +11,7 @@ privileged aspect Record_Roo_ToString {
         StringBuilder sb = new StringBuilder();
         sb.append("PackageName: ").append(getPackageName()).append(", ");
         sb.append("PackageVersion: ").append(getPackageVersion()).append(", ");
-        sb.append("Stacktrace: ").append(getStacktrace()).append(", ");
-        sb.append("Count: ").append(getCount());
+        sb.append("Stacktrace: ").append(getStacktrace());
         return sb.toString();
     }
     

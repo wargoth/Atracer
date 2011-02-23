@@ -22,6 +22,4 @@ public class Record {
 	@NotNull
 	private String stacktrace;
 
-	@NotNull
-	private int count = 1;
 }

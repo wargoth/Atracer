@@ -15,7 +15,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     Converter<Record, String> ApplicationConversionServiceFactoryBean.getRecordConverter() {
         return new Converter<Record, String>() {
             public String convert(Record source) {
-                return new StringBuilder().append(source.getStacktrace()).append(" ").append(source.getCount()).toString();
+                return new StringBuilder().append(source.getStacktrace()).toString();
             }
         };
     }

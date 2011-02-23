@@ -30,7 +30,6 @@ privileged aspect RecordDataOnDemand_Roo_DataOnDemand {
         obj.setPackageName(packageNameDataOnDemand.getRandomPackageName());
         obj.setPackageVersion(packageVersionDataOnDemand.getRandomPackageVersion());
         obj.setStacktrace("stacktrace_" + index);
-        obj.setCount(new Integer(index));
         return obj;
     }
     
