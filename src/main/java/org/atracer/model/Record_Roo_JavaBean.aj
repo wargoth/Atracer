@@ -33,4 +33,12 @@ privileged aspect Record_Roo_JavaBean {
         this.stacktrace = stacktrace;
     }
     
+    public int Record.getCount() {
+        return this.count;
+    }
+    
+    public void Record.setCount(int count) {
+        this.count = count;
+    }
+    
 }

@@ -7,4 +7,10 @@
 <definition extends="default" name="records/show">
         <put-attribute name="body" value="/WEB-INF/views/records/show.jspx"/>
     </definition>
+<definition extends="default" name="records/create">
+        <put-attribute name="body" value="/WEB-INF/views/records/create.jspx"/>
+    </definition>
+<definition extends="default" name="records/update">
+        <put-attribute name="body" value="/WEB-INF/views/records/update.jspx"/>
+    </definition>
 </tiles-definitions>

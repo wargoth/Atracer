@@ -35,4 +35,15 @@ privileged aspect PackageVersionController_Roo_Controller {
         return "packageversions/list";
     }
     
+    @RequestMapping(params = { "find=ByName", "form" }, method = RequestMethod.GET)
+    public String PackageVersionController.findPackageVersionsByNameForm(Model model) {
+        return "packageversions/findPackageVersionsByName";
+    }
+    
+    @RequestMapping(params = "find=ByName", method = RequestMethod.GET)
+    public String PackageVersionController.findPackageVersionsByName(@RequestParam("name") String name, Model model) {
+        model.addAttribute("packageversions", PackageVersion.findPackageVersionsByName(name).getResultList());
+        return "packageversions/list";
+    }
+    
 }

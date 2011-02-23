@@ -7,14 +7,17 @@
         <menu:category id="c_packageversion" z="I1seF4oR3ZPduhdJ0sDAtN28KD4=">
             
         <menu:item id="i_packageversion_list" messageCode="global_menu_list" url="/packageversions?page=1&amp;size=${empty param.size ? 10 : param.size}" z="6g/3gYauidfqe9GcksbXJJUnuLI="/>
+        <menu:item id="fi_packageversion_name" messageCode="global_menu_find" url="/packageversions?find=ByName&amp;form" z="qYnxhziyyaJ3AeU87+lBf1xjPS0="/>
         </menu:category>
     <menu:category id="c_packagename" z="XQpI/0h+55Sq+UIeqca7drMX/o0=">
             
         <menu:item id="i_packagename_list" messageCode="global_menu_list" url="/packagenames?page=1&amp;size=${empty param.size ? 10 : param.size}" z="yTqCU1WLgCXfX6DWQdTbDKTAFjo="/>
+        <menu:item id="fi_packagename_name" messageCode="global_menu_find" url="/packagenames?find=ByName&amp;form" z="gT+OV1/mhLYY75tZbR0H/B0e3eE="/>
         </menu:category>
     <menu:category id="c_record" z="vvWXWZKWPdSDsOdSxLfRZjUVD10=">
             
         <menu:item id="i_record_list" messageCode="global_menu_list" url="/records?page=1&amp;size=${empty param.size ? 10 : param.size}" z="eHyDkV13JqoEpSwDjqp8HeZWSLk="/>
+        <menu:item id="i_record_new" messageCode="global_menu_new" url="/records?form" z="IASEpm2t2HtUhlLSx7MqBKbJOYY="/>
         </menu:category>
     </menu:menu>
 </div>

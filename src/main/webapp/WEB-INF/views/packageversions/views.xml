@@ -7,4 +7,7 @@
 <definition extends="default" name="packageversions/show">
         <put-attribute name="body" value="/WEB-INF/views/packageversions/show.jspx"/>
     </definition>
+<definition extends="default" name="packageversions/findPackageVersionsByName">
+        <put-attribute name="body" value="/WEB-INF/views/packageversions/findPackageVersionsByName.jspx"/>
+    </definition>
 </tiles-definitions>

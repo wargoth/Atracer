@@ -7,6 +7,7 @@
             <table:column id="c_org_atracer_model_Record_packageName" property="packageName" z="6qoKCLFoT9KCoSSZhSR1AgTjBdQ="/>
             <table:column id="c_org_atracer_model_Record_packageVersion" property="packageVersion" z="xRn4CoQzvRx8Lf2RWX9aryTJK1s="/>
             <table:column id="c_org_atracer_model_Record_stacktrace" property="stacktrace" z="5AgswOXT0klSD5aq71G9qmlewCc="/>
+        <table:column id="c_org_atracer_model_Record_count" property="count" z="ZHPN2fkdVG5LyWV8A5WVV9yQkzs="/>
         </table:table>
     </page:list>
 </div>

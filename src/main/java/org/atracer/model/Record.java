@@ -18,7 +18,10 @@ public class Record {
 	@NotNull
 	@ManyToOne
 	private PackageVersion packageVersion;
-	
+
 	@NotNull
 	private String stacktrace;
+
+	@NotNull
+	private int count = 1;
 }

@@ -2,9 +2,10 @@
 <div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
-    <page:show create="false" delete="false" id="ps_org_atracer_model_Record" object="${record}" path="/records" z="0T+3mL5ldkHRdDqWKBQTT/BV8mo=">
+    <page:show delete="false" id="ps_org_atracer_model_Record" object="${record}" path="/records" z="RxbhNcsGBShqrpF9ECSVuPeqfn4=">
         <field:display field="packageName" id="s_org_atracer_model_Record_packageName" object="${record}" z="WjdqjrtF+w3dHbP98V0zTDPDv4Y="/>
         <field:display field="packageVersion" id="s_org_atracer_model_Record_packageVersion" object="${record}" z="tR4OxjKfkJB4s0dDmotx4kHtJLs="/>
         <field:display field="stacktrace" id="s_org_atracer_model_Record_stacktrace" object="${record}" z="5SNVMbVYQxtle3kC1r7CInnuew0="/>
+    <field:display field="count" id="s_org_atracer_model_Record_count" object="${record}" z="+3QE9/xVJhO3zqqZJ/YS108iIEI="/>
     </page:show>
 </div>
